@@ -1,0 +1,16 @@
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "kimo-springboot-app-service"
+  namespace: "default"
+  labels:
+    app: "kimo-springboot-app"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 8080
+  selector:
+    app: "kimo-springboot-app"
+  type: "LoadBalancer"
+  loadBalancerIP: ""
