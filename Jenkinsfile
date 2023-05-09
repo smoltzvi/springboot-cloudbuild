@@ -8,7 +8,7 @@ pipeline {
     CLUSTER_ZONE = "us-east4-a"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
-    REPO = "smoltzvi/spring-boot-docker"
+    REPO = "smoltzvi/springboot-cloudbuild"
   }
 
   agent {
